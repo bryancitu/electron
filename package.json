@@ -5,9 +5,10 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "dev":  "electron src/index.js"
+    "dev": "cross-env NODE_ENV=development electron src/index.js"
   },
   "dependencies": {
-    "electron": "^13.1.2"
+    "electron-compile": "^6.4.4",
+    "electron-prebuilt-compile": "^8.2.0"
   }
 }

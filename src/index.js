@@ -1,7 +1,12 @@
 'use strict'
 
 // Iniciando los objetos app y BroserWindow
-const { app, BrowserWindow } = require('electron');
+import { app, BrowserWindow } from 'electron';
+import devtools from './devtools';
+
+if (process.env.NODE_ENV === 'development') {
+    devtools()
+}
 
 // Ejecutando ordenes cuando la aplicacion esta lista
 app.on('ready', () => {
