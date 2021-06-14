@@ -1,0 +1,13 @@
+{
+  "name": "curso-electron",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev":  "electron index.js"
+  },
+  "dependencies": {
+    "electron": "^13.1.2"
+  }
+}
