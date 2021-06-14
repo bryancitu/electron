@@ -12,11 +12,11 @@ app.on('ready', () => {
         title: 'Hola Mundo',
         center: true,
         maximizable: false,
-        show: false
+        // show: false
     })
 
     win.once('ready-to-show', () => {
-        win.show
+        win.show()
     })
 
     //  cuando hacemos el evento de mover la ventana obtenemos la posicion
@@ -32,7 +32,8 @@ app.on('ready', () => {
     })
 
     // cargamos el contenido del la url a nuestra app desktop
-    win.loadURL('https://ego.pe/')
+    // win.loadURL('https://ego.pe/')
+    win.loadURL(`file://${__dirname}/renderer/index.html`)
     
 })
 
